@@ -1,6 +1,7 @@
 require_relative '../lib/04_simon_says'
 
 describe "Simon says" do
+  describe "echo" do
     it "should echo hello" do
       expect(echo("hello")).to eq("hello")
     end
@@ -24,7 +25,6 @@ describe "Simon says" do
     it "should repeat" do
       expect(repeat("hello")).to eq("hello hello")
     end
-
     # Wait a second! How can you make the "repeat" method
     # take one *or* two arguments?
     #
